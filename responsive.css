@@ -1,0 +1,266 @@
+/* General styles remain the same */
+
+.header, .secondary-bg {
+    background-color: rgb(162, 165, 169);
+}
+
+.work-sans-regular {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text-primary {
+    color: lightgreen;
+}
+
+.dark-2 {
+    color: #474747;
+}
+
+.btn-primary {
+    background-color: lightgreen;
+    font-weight: bold;
+    color: slategray;
+    padding: 8px 20px; /* Increased padding for better touch target */
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #2e2d2d;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+    .header {
+        background-size: cover;
+        background-position: center;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 0 50px 0;
+    }
+    .banner-content {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .profile-pic {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+    }
+    .about {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin: 5px 20px;
+    }
+    .nav-title {
+        font-size: 35px;
+    }
+    .banner-title {
+        font-size: 60px;
+    }
+    .banner-description {
+        font-size: 16px;
+    }
+    .about {
+        padding: 80px 20px;
+    }
+    .about-items {
+        flex-wrap: wrap;
+    }
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skill {
+        padding: 20px;
+    }
+    .resume-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 80px 20px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 45px;
+    }
+    .banner-description {
+        font-size: 14px;
+    }
+    .about {
+        padding: 70px 20px;
+    }
+    .skills-container {
+        gap: 10px;
+    }
+    .skill {
+        padding: 15px;
+    }
+    .resume-container {
+        gap: 30px;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea {
+        height: 50px;
+        padding: 10px;
+    }
+}
+
+/* End of responsive adjustments */
+
+/* Remaining styles */
+
+.text-center {
+    text-align: center;
+}
+
+.main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner-greetings {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.banner-description {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profile-pic {
+    height: 650px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 100px;
+}
+
+.banner-content {
+    max-width: 580px;
+}
+
+.about {
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border: 1px solid slategray;
+    padding: 10px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+    box-shadow: 0px 6px 50px 2px slategray;
+    border-radius: 7px;
+}
+
+.resume-container {
+    display: flex;
+    gap: 100px;
+}
+
+.experience-desription,
+.experience-sub-title {
+    color: #2f2e2e;
+}
+
+.experience-sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.download-cv-last {
+    margin-top: 50px;
+    margin-bottom: 7px;
+}
+
+footer {
+    padding: 130px;
+    display: flex;
+    gap: 120px;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+    height: 64px;
+    border-radius: 7px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+}
